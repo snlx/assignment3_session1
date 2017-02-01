@@ -1,0 +1,36 @@
+1. Give a brief description of the Hadoop eco system?
+Ans: Hadoop is a framework that allowsfor the distributed processing of large data sets across clusters of commodity computers using a simple programming model.
+The main focus of Hadoop ecosystem is on batch processing.
+Each requirement needs a specialized tool.
+some of the hadoop ecosystem consists of HDFS,Hbase which is used for columnar storage,pig scripting,oozie which is a workflow management system, hive for writing queries,flume used for log collection, sqoop for importing/exporting data from RDBMS,Ambari,zookeeper etc.
+ 
+2. What is meant by distributed computing and what are the different types of scaling
+available?
+Ans: Distributed computing refers to a cluster of of computers that allows for distributed processing of large data sets instead of processing the data set in a single machine.
+The different types of scaling are
+scale up or scale vertically:which means
+- adding resources to a single node in a system.
+- more expensive
+ 
+scale out or scale horizontally:which means
+- adding more nodes to a system.
+- more challenging for fault tolerance and software development.
+ 
+3. What is meant by commodity hardware in real time and what are its advantages with
+reference to enterprise?
+Ans: commodity hardware is nothing but cheap,affordable and easy to obtain hardware.
+	the advantages are 
+	-it is cost effective
+	-If one machine goes down it can be easily replaced since it is easy to obtain.
+	
+4. What is meant by real time and how data is collected in the real time and what are the
+options for analyzing streaming data?
+Ans: Real-time data refers to data that is presented as it is acquired.
+	 Apache Spark and Apache Storm are the Streaming data tools in Hadoop ecosystem which are used for streaming data analysis.
+ 
+5. What is the difference between HDFS blocks and input splits?
+Ans:
+– Block is the physical part of disk which has minimum amount of data that can be read or write. The actual size of block is decided during the design phase.
+– For example, the block size of HDFS can be 128MB/256MB though the default HDFS block size is 64 MB.
+– In contrast to block, split is the logical chunk of data created by the InputFormat specified in the MapReduce job configuration.
+– Entire block of data may not fit into single input split. 
